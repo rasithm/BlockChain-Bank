@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ORK Bank</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/landing.css">
+    <!-- <link rel="icon" href="assets/img/catOpen.png"> -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+  <div class="landing-container">
+    <header>
+      <div class="logo">ORK<span>Bank</span></div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="signup.html">Sign Up</a>
+        <a href="login.html">Login</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="text-content">
+          <h1>Smart Banking with <span>ORK</span></h1>
+          <p>Stake. Earn. Transfer. Fully decentralized.</p>
+          <div class="btn-group">
+            <a href="signup.html" class="btn">Get Started</a>
+            <a href="login.html" class="btn-secondary">Login</a>
+          </div>
+        </div>
+        <div class="model">
+            <model-viewer 
+                src="assets/3d/btc-coin.glb" 
+                alt="Bitcoin spinning" 
+                auto-rotate 
+                camera-controls 
+                background-color="#00000000" 
+                style="width: 300px; height: 300px;">
+            </model-viewer>
+
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 ORK Bank. Built on blockchain technology.</p>
+    </footer>
+  </div>
+
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</body>
+</html>
