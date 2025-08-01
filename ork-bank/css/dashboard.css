@@ -1,0 +1,208 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0d0d0d;
+  color: white;
+}
+
+.dashboard-container {
+  padding: 20px;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #333;
+}
+
+.dashboard-header h1 {
+  font-size: 1.8rem;
+  color: white;
+}
+
+.dashboard-header nav a {
+  color: #9f9fff;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.chart-section {
+  margin-top: 30px;
+}
+
+.chart-section h2 {
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+.graph-box {
+  position: relative;
+  width: 90%;
+  height: 80vh;
+  margin: auto;
+  overflow-x: auto;
+}
+
+canvas {
+  width: 2000px !important;
+  height: 100% !important;
+  background: #111;
+  border: 1px solid #333;
+  border-radius: 6px;
+}
+
+.current-price-label {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #00ff66;
+  background: #1a1a1a;
+  border: 1px solid #00ff66;
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+
+.action-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.btn-stack,
+.btn-unstack {
+  background: #222;
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn-stack:hover {
+  background-color: #0066cc;
+}
+
+.btn-unstack:hover {
+  background-color: #cc3300;
+}
+
+
+body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0d0d0d;
+      color: white;
+    }
+
+    .dashboard-container {
+      padding: 20px;
+    }
+
+    .dashboard-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #111;
+      padding: 1rem 2rem;
+      border-bottom: 1px solid #333;
+    }
+
+    .dashboard-header h1 {
+      font-size: 1.8rem;
+      color: white;
+    }
+
+    .dashboard-header nav a {
+      color: #9f9fff;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .chart-section {
+      margin-top: 30px;
+      position: relative;
+    }
+
+    .chart-section h2 {
+      color: #ccc;
+      margin-bottom: 10px;
+    }
+
+    .graph-box {
+      position: relative;
+      width: 90%;
+      height: 90vh;
+      overflow-x: hidden;
+      border: 1px solid #333;
+      border-radius: 6px;
+      background: #111;
+    }
+
+    canvas {
+      width: 100% !important;
+      height: 100% !important;
+    }
+
+    .current-price-label {
+      position: absolute;
+      bottom: 10px;
+      right: 20px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: white;
+    }
+
+    .action-buttons {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .btn-stack, .btn-unstack {
+      background: #222;
+      color: white;
+      border: none;
+      padding: 0.8rem 2rem;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .btn-stack:hover {
+      background-color: #0066cc;
+    }
+
+    .btn-unstack:hover {
+      background-color: #cc3300;
+    }
+
+    .graph-toggle-btn {
+      position: absolute;
+      top: 0;
+      right: 10px;
+      margin: 10px;
+      background-color: #333;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      z-index: 10;
+      font-weight: bold;
+    }
+
+    .graph-toggle-btn:hover {
+      background-color: #555;
+    }

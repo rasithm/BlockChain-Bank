@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard | ORK Bank</title>
+  <!-- <link rel="stylesheet" href="css/global.css" /> -->
+  <link rel="stylesheet" href="css/dashboard.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    
+  </style>
+</head>
+<body>
+  <div class="dashboard-container">
+    <!-- Header -->
+    <div class="dashboard-header">
+      <h1>ORK <span style="color: yellow;">Bank</span></h1>
+      <nav>
+        <a href="chart.html">Live Chart</a>
+        <a href="#">Transaction History</a>
+      </nav>
+    </div>
+
+    <!-- Chart Section -->
+    <div class="chart-section">
+      <h2>ORKToken Market Value</h2>
+      <button class="graph-toggle-btn" onclick="toggleGraphScroll()">View Graph</button>
+      <div class="graph-box" id="graphBox">
+        <canvas id="orkChartCanvas"></canvas>
+        <div class="current-price-label" id="currentPrice">ORKToken: ₹100</div>
+      </div>
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="action-buttons">
+      <button class="btn-stack" onclick="location.href='credit.html'">Invest</button>
+      <button class="btn-unstack" onclick="location.href='debit.html'">Withdraw</button>
+    </div>
+  </div>
+
+  <script src="./js/dashboard.js"></script>
+</body>
+</html>
