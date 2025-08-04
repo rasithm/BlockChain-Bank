@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Transaction History</title>
+  <link rel="stylesheet" href="css/tHistroy.css" />
+</head>
+<body>
+  <div class="dashboard-header">
+    <h1>ORK <span>Bank</span></h1>
+    <nav>
+      <a href="Transation.html">Money Transaction</a>
+      <a href="chart.html">Live Chart</a>
+      <button id="metamaskConnectBtn">Connect Wallet</button>
+    </nav>
+  </div>
+
+  <div id="user-info" class="user-info"></div>
+
+  <div id="content-area" class="content-area">
+    <div class="tab-buttons">
+      <button class="tab-btn active" id="creditTab">Credit History</button>
+      <button class="tab-btn" id="debitTab">Debit History</button>
+    </div>
+    <div id="transaction-container" class="transaction-container"></div>
+  </div>
+
+  <script src="js/tHistory.js"></script>
+</body>
+</html>
+

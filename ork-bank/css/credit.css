@@ -1,0 +1,81 @@
+/* Credit Card Styles */
+.credit-card-container {
+  width: 380px;
+  height: 220px;
+  perspective: 1000px;
+  margin: 2rem;
+}
+.card-inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+.credit-card-container:hover .card-inner {
+  transform: rotateY(180deg);
+}
+.card-front, .card-back {
+  background-image: url("../assets/img/bg.png");
+  color: white;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  padding: 20px;
+  backface-visibility: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+.card-front header,
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo img {
+  width: 40px;
+}
+.chip {
+  width: 50px;
+}
+.card-front .card-details {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+h5.number {
+  margin-top: 4px;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+h5.name {
+  margin-top: 20px;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}
+.magnetic-strip {
+  height: 40px;
+  background: black;
+  margin-top: 15px;
+  border-radius: 5px;
+}
+.signature-cvv {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.signature span {
+  font-size: 10px;
+}
+.white-strip {
+  background: white;
+  height: 30px;
+  width: 160px;
+  margin-top: 4px;
+}
+.card-info {
+  font-size: 12px;
+  margin-top: 20px;
+}

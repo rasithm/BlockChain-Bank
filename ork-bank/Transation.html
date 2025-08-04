@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ORK Bank | Transactions</title>
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/credit.css" />
+    <link rel="stylesheet" href="css/transation.css" />
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+  </head>
+  <body>
+    <!-- Dashboard Header -->
+    <div class="dashboard-header">
+      <h1>ORK <span style="color: yellow;">Bank</span></h1>
+      <nav>
+        <a href="Transation.html">Money Transaction</a>
+        <a href="chart.html">Live Chart</a>
+        <a href="#">Transaction History</a>
+        <button id="metamaskConnectBtn" style="background: #f6851b; border: none; color: white; padding: 6px 12px; border-radius: 6px;margin-left: 5px; cursor: pointer;">
+          Connect Wallet
+        </button>
+        <!-- <button>MetaMask</button> -->
+      </nav>
+    </div>
+
+    <!-- Transaction Section -->
+    <section class="transaction-section">
+      <!-- Credit Card with Flip -->
+      <div class="credit-card-container" id="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <header>
+              <span class="logo">
+                <img src="assets/img/logo.png" alt="" />
+                <h5>Master Card</h5>
+              </span>
+              <img src="assets/img/chip.png" alt="Chip" class="chip" />
+            </header>
+
+            <div class="card-details">
+              <div class="name-number">
+                <h6>Card Number</h6>
+                <h5 class="number" id="cardNumber">#### #### #### ####</h5>
+                <h5 class="name" id="cardHolder">Your Name</h5>
+              </div>
+              <div class="valid-date">
+                <h6>Valid Thru</h6>
+                <h5 id="cardExpiry">MM/YY</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-back">
+            <div class="magnetic-strip"></div>
+            <div class="signature-cvv">
+              <div class="signature">
+                <span>Authorized Signature</span>
+                <div class="white-strip"></div>
+              </div>
+              <div class="cvv">CVV: <span id="cardCVV">***</span></div>
+            </div>
+            <p class="card-info">Banking Services Powered by ORK</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Transaction Options Card -->
+      <div class="transaction-toggle-card">
+        <div class="toggle-buttons">
+          <button id="viewBalanceBtn">Balance</button>
+          <button id="transactionFormBtn">Transaction</button>
+        </div>
+
+        <!-- Dynamic Display Area -->
+        <div id="transactionContent">
+          <!-- JS content injected here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Scripts -->
+    <script type="module" src="js/config.js"></script>
+    <script src="js/credit.js"></script>
+    <script  src="js/transation.js" type="module"></script>
+  </body>
+</html>

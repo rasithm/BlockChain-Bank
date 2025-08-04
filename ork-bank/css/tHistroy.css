@@ -1,0 +1,97 @@
+/* General Styling */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f3f4f6; /* elite white */
+  color: #1f1f1f;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #333;
+}
+
+.dashboard-header h1 {
+  font-size: 1.8rem;
+  color: white;
+}
+
+.dashboard-header h1 span {
+  color: #f7c843;
+}
+
+.dashboard-header nav a {
+  color: #9f9fff;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#metamaskConnectBtn {
+  background: #f6851b;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.tab-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.tab-btn {
+  padding: 10px 20px;
+  border: none;
+  background: #d1d1d1;
+  color: #000;
+  font-weight: bold;
+  margin: 0 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.tab-btn.active {
+  background: #0d6efd;
+  color: white;
+}
+
+.transaction-container {
+  padding: 20px;
+}
+
+.transaction-card {
+  background: white;
+  border-left: 6px solid #0d6efd;
+  margin: 10px auto;
+  max-width: 700px;
+  padding: 16px 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.transaction-card.debit {
+  border-left-color: #ff4d4f;
+}
+
+.transaction-card.credit {
+  border-left-color: #28a745;
+}
+
+.transaction-card h4 {
+  margin: 0 0 8px;
+  font-size: 1.2rem;
+}
+
+.transaction-card p {
+  margin: 2px 0;
+  font-size: 0.95rem;
+}

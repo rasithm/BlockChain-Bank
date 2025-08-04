@@ -1,0 +1,156 @@
+/* ========== ROOT VARIABLES ========== */
+:root {
+  --bg-primary: #0d0d0d;
+  --bg-secondary: #1a1a1a;
+  --card-bg: #151929f2;
+  --accent: #7209b7;
+  --accent-light: #3a0ca3;
+  --text-color: #e0e0e0;
+  --subtle-text: #aaa;
+  --border-radius: 20px;
+  --shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  --font-main: 'Poppins', sans-serif;
+}
+
+/* ========== RESET STYLES ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-main);
+  background: linear-gradient(135deg, var(--bg-primary));
+  color: var(--text-color);
+  overflow-x: hidden;
+}
+
+/* ========== COMMON ========== */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+  gap: 20px;
+}
+
+/* ========== HEADER ========== */
+header {
+  background-color: var(--bg-primary);
+  padding: 16px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: var(--shadow);
+  z-index: 100;
+  /* position: sticky; */
+  /* top: 0; */
+}
+/* 
+header img.logo {
+  height: 48px;
+} */
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: var(--accent);
+}
+
+/* ========== BUTTONS ========== */
+.btn {
+  background: var(--accent);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: var(--accent-light);
+}
+
+/* ========== CARD UI ========== */
+.card {
+  background: var(--card-bg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  padding: 24px;
+  color: var(--text-color);
+  position: relative;
+}
+
+/* ========== INPUT FIELDS ========== */
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 12px 16px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--accent);
+  border-radius: var(--border-radius);
+  color: var(--text-color);
+  font-size: 1rem;
+  outline: none;
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+
+input::placeholder {
+  color: var(--subtle-text);
+}
+
+/* ========== SCROLLBAR ========== */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 10px;
+}
+
+/* ========== ANIMATIONS ========== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.5s ease-in-out;
+}

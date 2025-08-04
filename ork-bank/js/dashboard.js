@@ -74,7 +74,7 @@ priceLabel.textContent = `ORKToken: ₹${orkValue}`;
 // Update chart every 5 seconds
 setInterval(() => {
   counter += 5;
-  const randomChange = Math.floor(Math.random() * 10 - 4);
+  const randomChange = Math.floor(Math.random() * 10 - 5);
   orkValue = Math.max(70, orkValue + randomChange);
   const color = orkValue >= previous ? '#00ff66' : '#ff2e2e';
 
