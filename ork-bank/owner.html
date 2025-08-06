@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Owner | ORK Bank</title>
+  <link rel="stylesheet" href="css/owner.css" />
+</head>
+<body>
+  <!-- Dashboard Header -->
+  <div class="dashboard-header">
+    <h1>ORK <span>Bank</span></h1>
+    <nav>
+      <a href="Transation.html">Money Transaction</a>
+      <a href="chart.html">Live Chart</a>
+      <button id="metamaskConnectBtn">Connect Wallet</button>
+    </nav>
+  </div>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <!-- Token Stats Table -->
+    <section class="table-section">
+      <h2>User Investment Overview</h2>
+      
+      <!-- Table Header -->
+      <div class="table-header">
+        <div>Username</div>
+        <div>MetaMask ID</div>
+        <div>Invested Amount (MR)</div>
+        <div>Tokens Issued</div>
+        <div>Last Invested Amount (MR)</div>
+      </div>
+
+      <!-- Scrollable Data Rows -->
+      <div class="table-body" id="userTableBody">
+        <!-- Rows will be dynamically inserted from JS -->
+      </div>
+
+      <!-- Summary Layer -->
+      <div class="table-summary" id="summaryLayer">
+        <div>Total MR Invested: <span id="totalMR">0</span></div>
+        <div>Total ORK Tokens Issued: <span id="totalORK">0</span></div>
+        <div>Last MR Invested: <span id="lastMR">0</span></div>
+        <div>Last ORK Issued: <span id="lastORK">0</span></div>
+      </div>
+    </section>
+
+    <!-- Token Issuing Card -->
+    <section class="issue-token-section">
+      <!-- Left Block: Owner Stats -->
+      <div class="token-stats-left">
+        <h3>Owner Balance</h3>
+        <p>ORK Tokens: <span id="ownerORKBalance">0</span></p>
+        <p>Last ORK Issued: <span id="lastIssueAmount">0</span></p>
+      </div>
+
+      <!-- Middle Form Block -->
+      <div class="issue-form">
+        <h3>Issue Token</h3>
+        <input type="text" id="userWallet" placeholder="MetaMask ID" required />
+        <input type="email" id="userEmail" placeholder="User Email" required />
+        <input type="password" id="userPassword" placeholder="Password" required />
+        <button id="issueTokenBtn">Issue Token</button>
+      </div>
+
+      <!-- Right Block: MRToken Info -->
+      <div class="token-stats-right">
+        <h3>Owner MR Balance</h3>
+        <p>MR Tokens: <span id="ownerMRBalance">0</span></p>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/owner.js"></script>
+</body>
+</html>
