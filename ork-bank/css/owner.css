@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f7fa;
+  color: #333;
+}
+
+.dashboard-header {
+  background: #1e3a8a; /* dark blue */
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dashboard-header h1 span {
+  color: #38bdf8; /* cyan highlight */
+}
+
+.dashboard-header nav a {
+  color: white;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.dashboard-header nav button {
+  background: #2563eb;
+  border: none;
+  padding: 8px 15px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dashboard {
+  padding: 20px;
+}
+
+/* Table */
+.user-table {
+  margin-bottom: 30px;
+}
+
+.user-table .table-wrapper {
+  max-height: 250px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  background: white;
+}
+
+.user-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.user-table th, .user-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.user-table th {
+  background: #e0f2fe;
+  position: sticky;
+  top: 0;
+}
+
+.summary {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-around;
+  background: #e0e7ff;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* Issue Token Card */
+.issue-card {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.issue-card div {
+  flex: 1;
+  margin: 0 10px;
+  text-align: center;
+}
+
+.issue-card .card-form input {
+  display: block;
+  width: 90%;
+  margin: 8px auto;
+  padding: 8px;
+}
+
+.issue-card button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+#formMessage {
+  margin-top: 10px;
+  font-size: 14px;
+}
